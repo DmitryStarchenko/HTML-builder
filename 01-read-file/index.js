@@ -7,7 +7,5 @@ const file = fs.createReadStream(pathFile, 'utf-8');
 let result = '';
 file.on('data', (text) => {
   result += text;
-});
-file.on('end', () => {
   console.log(result);
 });
