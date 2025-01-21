@@ -9,7 +9,7 @@ const file = fs.createWriteStream(path.resolve(__dirname, 'text.txt'));
 output.write('Enter text:\n');
 
 rl.on('line', (input) => {
-  if (input === 'exit') {
+  if (input === 'exit' || input === 'Exit') {
     rl.close();
     output.write('Entry completed');
   }
